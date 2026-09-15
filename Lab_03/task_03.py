@@ -14,7 +14,7 @@
 # For an invalid score print:
 #   Invalid score
 
-# Write your code below:
+
 score = int(input("Enter a score: "))    
 
 if score < 0 or score > 100:             
