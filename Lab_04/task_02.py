@@ -23,13 +23,13 @@ count = 0
 total = 0
 
 # Ask for the first number
-number = int(input("Enter an integer (0 to stop): "))
+number = int(input("Enter an integer: "))
 
 # Keep looping until the user enters 0
 while number != 0:
     count = count + 1
     total = total + number
-    number = int(input("Enter an integer (0 to stop): "))
+    number = int(input("Enter an integer: "))
 
 # Print final results
 print("Count:", count)
