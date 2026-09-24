@@ -19,3 +19,20 @@
 #
 # Expected final list:
 # ["bread", "coffee", "eggs", "rice", "tea"]
+
+shopping = ["bread", "milk", "eggs"]
+
+shopping.append("rice")
+
+shopping.insert(1, "coffee")
+
+shopping.extend(["tea", "sugar"])
+
+shopping.remove("milk")
+
+print("Index of Eggs:", shopping.index("eggs"))
+print("Count of Bread:", shopping.count("bread"))
+
+removed_item = shopping.pop()
+print(shopping)
+print(removed_item)
