@@ -24,9 +24,19 @@
 # Do not use filter() or map().
 
 def result_summary(name, *scores, passing=60):
-    count = 0
-    average = 0
     if not scores:
         return "No scores"
-    elif 
-    
+
+    average = sum(scores) / len(scores)
+
+    passed = 0
+    for score in scores:
+        if score >= passing:
+            passed = passed + 1
+
+    return f"{name}: average={average}, passed={passed}/{len(scores)}"
+
+
+# Test
+print(result_summary("Anna", 80, 70, 50, 120, passing=60))
+print(result_summary("Ben"))
