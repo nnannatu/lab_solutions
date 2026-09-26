@@ -19,12 +19,12 @@
 # Use key=len for at least one of the two results.
 #
 # Do not manually calculate the lengths.
+# ============================================================
 
 words = ["pear", "watermelon", "fig", "banana", "kiwi"]
 
-shortest_first = words[0]
-longest_first = words[0]
+shortest_first = sorted(words, key=len)
+longest_first = sorted(words, key=len, reverse=True)
 
-for word in words:
-    if len(word) < shortest_first:
-        
+print("Shortest first:", shortest_first)
+print("Longest first: ", longest_first)
