@@ -1,0 +1,25 @@
+student_id,name,course,assessment,mark,max_mark,date
+S001,Alice Johnson,Math,Quiz 1,18,20,2025-09-10
+S001,Alice Johnson,Math,Quiz 2,15,20,2025-09-24
+S001,Alice Johnson,Math,Midterm,42,50,2025-10-05
+S001,Alice Johnson,Physics,Quiz 1,17,20,2025-09-12
+S002,Bob Smith,Math,Quiz 1,,20,2025-09-10
+S002,Bob Smith,Math,Quiz 2,12,20,2025-09-24
+S002,Bob Smith,Math,Midterm,35,50,2025-10-05
+S002,Bob Smith,Physics,Quiz 1,14,20,2025-09-12
+S003,Carla Mendes,Math,Quiz 1,20,20,2025-09-10
+S003,Carla Mendes,Math,Quiz 2,19,20,2025-09-24
+S003,Carla Mendes,Math,Midterm,48,50,2025-10-05
+S003,Carla Mendes,Physics,Quiz 1,18,20,2025-09-12
+S004,David Kim,Math,Quiz 1,10,20,2025-09-10
+S004,David Kim,Math,Quiz 2,,20,2025-09-24
+S004,David Kim,Math,Midterm,28,50,2025-10-05
+S004,David Kim,Physics,Quiz 1,11,20,2025-09-12
+S005,Eva Novak,Math,Quiz 1,16,20,2025-09-10
+S005,Eva Novak,Math,Quiz 2,17,20,2025-09-24
+S005,Eva Novak,Math,Midterm,40,50,2025-10-05
+S005,Eva Novak,Physics,Quiz 1,19,20,2025-09-12
+S006,Femi Adeyemi,Math,Quiz 1,13,20,2025-09-10
+S006,Femi Adeyemi,Math,Quiz 2,14,20,2025-09-24
+S006,Femi Adeyemi,Math,Midterm,33,50,2025-10-05
+S006,Femi Adeyemi,Physics,Quiz 1,,20,2025-09-12
