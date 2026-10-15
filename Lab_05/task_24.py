@@ -42,26 +42,43 @@
 # "Anna: average=72.5, highest=90, lowest=50,
 #  passed=3, failed=1"
 
+
 def exam_statistics(student, *scores, passing=60):
+    # Base case: no scores provided
     if not scores:
         return "No scores"
 
-    passed = 0,
-    failed = 0,
-    total = 0,
-    average_score = 0,
-    lowest_score = 0,
-    highest_score = 0,
+    # Seed trackers with the first score (avoids the "stuck at 0" trap)
+    total = 0
+    passed = 0
+    failed = 0
+    highest = scores[0]
+    lowest = scores[0]
 
+    # Single loop computes everything
     for score in scores:
         total = total + score
-        if score > 60:
+
+        if score >= passing:
             passed = passed + 1
         else:
             failed = failed + 1
-        if score < lowest_score:
-            lowest_score = score
-        else:
-            highest_score = score
 
-    average_score = 
+        if score > highest:
+            highest = score
+        if score < lowest:
+            lowest = score
+
+    average = total / len(scores)
+
+    return (
+        f"{student}: average={average}, highest={highest}, "
+        f"lowest={lowest}, passed={passed}, failed={failed}"
+    )
+
+
+# Test
+print(exam_statistics("Anna", 80, 70, 50, 90, passing=60))
+print(exam_statistics("Ben"))
+print(exam_statistics("Cara", 100, 100, 100))
+print(exam_statistics("Dan", 10, 20, 30))
