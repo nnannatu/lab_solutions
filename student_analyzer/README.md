@@ -7,8 +7,8 @@ reports.
 ## Setup
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/nnannatu/lab_solutions/tree/main/student_analyzer
 cd student_analyzer
 python -m venv .venv
-source .venv/bin/activate     # Windows: .venv\Scripts\activate
+source .venv/bin/activate
 pip install -r requirements.txt
